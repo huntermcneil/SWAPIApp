@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xmo-DH-Sph">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Species View Controller-->
+        <scene sceneID="ytu-zV-WuG">
+            <objects>
+                <viewController id="xmo-DH-Sph" customClass="SpeciesViewController" customModule="SWAPIApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dbR-lR-khr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="tyG-8X-wi4">
+                                <rect key="frame" x="8" y="52" width="398" height="317"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7uF-mL-fiU">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVA-DW-hh0">
+                                        <rect key="frame" x="0.0" y="166" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(language)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofQ-xk-Lzo">
+                                        <rect key="frame" x="0.0" y="296.5" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tyG-8X-wi4" firstAttribute="top" secondItem="B20-bY-qO8" secondAttribute="top" constant="8" id="49s-43-pfr"/>
+                            <constraint firstItem="tyG-8X-wi4" firstAttribute="leading" secondItem="B20-bY-qO8" secondAttribute="leading" constant="8" id="Eld-yz-jfg"/>
+                            <constraint firstItem="B20-bY-qO8" firstAttribute="trailing" secondItem="tyG-8X-wi4" secondAttribute="trailing" constant="8" id="HHl-El-vcQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B20-bY-qO8"/>
+                    </view>
+                    <connections>
+                        <outlet property="languageTextField" destination="ofQ-xk-Lzo" id="7WT-z9-gkc"/>
+                        <outlet property="nameTextField" destination="GVA-DW-hh0" id="Ten-eJ-KoK"/>
+                        <outlet property="speciesSearchBar" destination="7uF-mL-fiU" id="Lbh-dQ-O6B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYi-ws-TV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="205"/>
+        </scene>
+    </scenes>
+</document>
